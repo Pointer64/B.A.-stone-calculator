@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>돌천계</title>
+  </head>
+  <body>
+
+    <div class="container mt-5 mb-5">
+        <h1 class="m-auto">추가로 필요한 청휘석 수는 <br><span id="count">[ 0 ] 개</span><br> 입니다.</h1>
+        <h4 class="m-auto mt-3" id="count2">전부 얻었을때 청휘석 수: 0개</h3>
+    </div>
+
+    <div class="form-floating mb-4">
+        <input class="form-control" id="now_stones" placeholder="name@example.com">
+        <label for="now_stones">현재 청휘석 수</label>
+    </div>
+    
+    <div class="form-floating mb-4">
+        <select class="form-select" id="person_count" aria-label="Floating label select example">
+            <option selected>0명</option>
+            <option value="1">1명</option>
+            <option value="2">2명</option>
+            <option value="3">3명</option>
+        </select>
+        <label for="person_count">뽑을 캐릭터 수</label>
+    </div>
+
+    <div class="mb-4">
+        <label for="10ticket_count" class="form-label m-2">보유한 10회 무료모집 티켓 수</label>
+        <input class="form-control" id="10ticket_count" placeholder="기본값: 0">
+    </div>
+
+    <div>
+        <label for="1ticket_count" class="form-label m-2">보유한 1회 무료모집 티켓 수</label>
+        <input class="form-control" id="1ticket_count" placeholder="기본값: 0">
+    </div>
+
+
+    <!-- <button type="button" id="start" class="btn btn-primary btn-lg m-2">계산하기</button> -->
+
+    <div class="d-grid w-100 btn_container">
+        <button class="btn btn-primary btn-lg rounded-0" id="start" type="button">계산하기</button>
+    </div>
+
+    <!-- 이 아래부터 내가 짠 코드 아님-->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <script src="script.js"></script>
+  </body>
+</html>
