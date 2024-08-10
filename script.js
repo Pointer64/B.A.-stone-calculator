@@ -17,6 +17,8 @@ let input_10ticket_count = document.getElementById("10ticket_count");
 let input_1ticket_count = document.getElementById("1ticket_count");
 let now_stones = document.getElementById("now_stones");
 
+let d_day = document.getElementById("d-day");
+
 let want_character_count = 0;
 let have_10tickets_count = 0;
 let have_1tickets_count = 0;
@@ -68,3 +70,20 @@ calculate_start_btn.addEventListener("click", function () {
         ( 24000 * want_character_count - 1200 * have_10tickets_count - 120 * have_1tickets_count)
     }개`
 });
+
+
+
+const today = new Date();
+const targetDate = new Date('2025-01-19');
+
+// 밀리초 단위 차이 계산
+const diffTime = targetDate - today;
+
+// 밀리초를 일수로 변환
+const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+if (diffDays < 0) {
+    d_day.innerHTML = `D+${diffDays * (-1)}`;
+} else {
+    d_day.innerHTML = `D-${diffDays}`;
+}
