@@ -74,7 +74,7 @@ calculate_start_btn.addEventListener("click", function () {
 
 
 const today = new Date();
-const targetDate = new Date('2025-01-19');
+const targetDate = new Date('2025-01-23');
 
 // 밀리초 단위 차이 계산
 const diffTime = targetDate - today;
@@ -88,7 +88,7 @@ if (diffDays < 0) { // 0 이하, 지났다면
     d_day.innerHTML = `D-${diffDays}`;
 }
 
-const targetDate2 = new Date("2025-01-26");
+const targetDate2 = new Date("2025-06-24");
 const diffTime2 = targetDate2 - today;
 
 const diffDays2 = Math.ceil(diffTime2 / (1000 * 60 * 60 * 24));
