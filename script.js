@@ -65,10 +65,19 @@ calculate_start_btn.addEventListener("click", function () {
             1200 * have_10tickets_count -
             120 * have_1tickets_count
         ) - have_stones;
-    text1.innerHTML = `[ ${extra_need_stones} ] 개`;
-    text2.innerHTML = `전부 얻었을때 청휘석 수: ${
-        ( 24000 * want_character_count - 1200 * have_10tickets_count - 120 * have_1tickets_count)
+
+        // 0보다 작으면 n개 남습니다 표시
+    if (extra_need_stones < 0) {
+        text1.innerHTML = `[ ${extra_need_stones * (-1) } ] 개 남습니다!`;
+        text2.innerHTML = `전부 얻었을때 청휘석 수: ${
+            ( 24000 * want_character_count - 1200 * have_10tickets_count - 120 * have_1tickets_count)
     }개`
+    } else {
+        text1.innerHTML = `[ ${extra_need_stones} ] 개`;
+        text2.innerHTML = `전부 얻었을때 청휘석 수: ${
+            ( 24000 * want_character_count - 1200 * have_10tickets_count - 120 * have_1tickets_count)
+        }개`
+    }
 });
 
 
