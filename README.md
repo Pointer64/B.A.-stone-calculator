@@ -1,5 +1,5 @@
 # 블루아카이브 돌 계산기
-(Blue Archice Stone Calculator)
+(Blue Archive Stone Calculator)
 <br>
 <br>
 이걸 만든 개발자는 예전에 무료 100연뽑기 + 티켓과 청휘석을 합쳐서 이로하를 뽑을때 필요한 청휘석을 계산할때마다 수치가 달라지는 대참사가 일어났다. <br>
