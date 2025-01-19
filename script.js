@@ -82,32 +82,32 @@ calculate_start_btn.addEventListener("click", function () {
 
 
 
-const today = new Date();
-const targetDate = new Date('2025-01-23');
+// const today = new Date();
+// const targetDate = new Date('2025-01-23');
 
-// 밀리초 단위 차이 계산
-const diffTime = targetDate - today;
+// // 밀리초 단위 차이 계산
+// const diffTime = targetDate - today;
 
-// 밀리초를 일수로 변환
-const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+// // 밀리초를 일수로 변환
+// const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 
-if (diffDays < 0) { // 0 이하, 지났다면
-    d_day.innerHTML = `D+${diffDays * (-1)}`;
-} else {
-    d_day.innerHTML = `D-${diffDays}`;
-}
+// if (diffDays < 0) { // 0 이하, 지났다면
+//     d_day.innerHTML = `D+${diffDays * (-1)}`;
+// } else {
+//     d_day.innerHTML = `D-${diffDays}`;
+// }
 
-const targetDate2 = new Date("2025-06-24");
-const diffTime2 = targetDate2 - today;
+// const targetDate2 = new Date("2025-06-24");
+// const diffTime2 = targetDate2 - today;
 
-const diffDays2 = Math.ceil(diffTime2 / (1000 * 60 * 60 * 24));
+// const diffDays2 = Math.ceil(diffTime2 / (1000 * 60 * 60 * 24));
 
-if (diffDays2 < 0) { // 지났다면
-    calculate_start_btn.style = "background-color: dodgerblue; color: white";
-} else {
-    if (Math.random() > 0.45) {
-        calculate_start_btn.style = "background-color: #8cb3ce; color: white";
-    } else {
-        calculate_start_btn.style = "background-color: #e4a6b9; color: white";
-    }
-}
+// if (diffDays2 < 0) { // 지났다면
+//     calculate_start_btn.style = "background-color: dodgerblue; color: white";
+// } else {
+//     if (Math.random() > 0.45) {
+//         calculate_start_btn.style = "background-color: #8cb3ce; color: white";
+//     } else {
+//         calculate_start_btn.style = "background-color: #e4a6b9; color: white";
+//     }
+// }

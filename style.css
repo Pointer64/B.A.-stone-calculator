@@ -25,3 +25,8 @@ body {
 .selector-for-some-widget {
   box-sizing: content-box;
 }
+
+#start {
+    background-color: #6c649e;
+    color: white;
+}
